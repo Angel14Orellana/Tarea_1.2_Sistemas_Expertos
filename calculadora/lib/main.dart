@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
           ),
         ),
         floatingActionButton: Row(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             FloatingActionButton(
               backgroundColor: Colors.green[700],
@@ -72,30 +72,34 @@ class _MyAppState extends State<MyApp> {
               onPressed: dividir,
               child: const Icon(Icons.percent),
             ),
-            const SizedBox(width: 16),
           ],
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       ),
     );
   }
 
   void sumar() {
-    setState(() {});
-    contador += 2;
+    setState(() {
+      contador += 2;
+    });
   }
 
   void restar() {
-    setState(() {});
-    contador -= 2;
+    setState(() {
+      contador -= 2;
+    });
   }
 
   void multiplicar() {
-    setState(() {});
-    contador *= 2;
+    setState(() {
+      contador *= 2;
+    });
   }
 
   void dividir() {
-    setState(() {});
-    contador /= 2;
+    setState(() {
+      contador /= 2;
+    });
   }
 }
