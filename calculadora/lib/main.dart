@@ -23,7 +23,7 @@ class _MyAppState extends State<MyApp> {
       title: 'Calculadora',
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 30, 0, 255),
+          backgroundColor: const Color.fromARGB(255, 30, 0, 255),
           title: const Text('Calculadora'),
         ),
         body: Center(
@@ -54,22 +54,22 @@ class _MyAppState extends State<MyApp> {
           children: [
             FloatingActionButton(
               backgroundColor: Colors.green[700],
-              onPressed: sumar, // paso unicamente la referencia
+              onPressed: sumar,
               child: const Icon(Icons.add),
             ),
             FloatingActionButton(
               backgroundColor: Colors.red[700],
-              onPressed: restar, // paso unicamente la referencia
+              onPressed: restar,
               child: const Icon(Icons.remove),
             ),
             FloatingActionButton(
               backgroundColor: Colors.amber[700],
-              onPressed: multiplicar, // paso unicamente la referencia
+              onPressed: multiplicar,
               child: const Icon(Icons.close),
             ),
             FloatingActionButton(
               backgroundColor: Colors.purple[700],
-              onPressed: dividir, // paso unicamente la referencia
+              onPressed: dividir,
               child: const Icon(Icons.percent),
             ),
             const SizedBox(width: 16),
